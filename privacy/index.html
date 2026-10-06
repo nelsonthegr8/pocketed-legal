@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Pocketed — Privacy Policy</title>
+<meta name="description" content="Pocketed is a local-first budgeting app. It collects no data, requires no account, and performs no tracking.">
+<style>
+  :root {
+    color-scheme: light;
+    --teal: #00BFA6;
+    --teal-dk: #00897B;
+    --ink: #0D0D1A;
+    --bg: #F6F7F9;
+    --surface: #FFFFFF;
+    --line: #E4E7EC;
+    --text: #1A1B25;
+    --muted: #5B6273;
+    --accent: #7C4DFF;
+    --maxw: 720px;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      color-scheme: dark;
+      --bg: #0B0C12;
+      --surface: #14161F;
+      --line: #262A38;
+      --text: #ECEEF4;
+      --muted: #9AA0B2;
+      --teal: #2BD4BD;
+      --teal-dk: #2BD4BD;
+    }
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; }
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.65;
+    font-size: 17px;
+    -webkit-font-smoothing: antialiased;
+    padding: env(safe-area-inset-top, 0) 20px calc(64px + env(safe-area-inset-bottom, 0));
+  }
+  .wrap { max-width: var(--maxw); margin: 0 auto; }
+
+  header.masthead {
+    display: flex; align-items: center; gap: 16px;
+    padding: 40px 0 28px;
+    border-bottom: 1px solid var(--line);
+  }
+  .mark {
+    width: 56px; height: 56px; border-radius: 28%; flex: none;
+    box-shadow: 0 2px 8px rgba(16,18,30,.18);
+  }
+  .masthead h1 { font-size: 15px; letter-spacing: .14em; text-transform: uppercase; color: var(--teal-dk); margin: 0 0 2px; font-weight: 700; }
+  .masthead .app { font-size: 26px; font-weight: 800; letter-spacing: -.02em; margin: 0; }
+
+  h2 {
+    font-size: 21px; font-weight: 700; letter-spacing: -.01em;
+    margin: 40px 0 10px; padding-top: 6px;
+  }
+  h2:first-of-type { margin-top: 32px; }
+  p { margin: 0 0 16px; }
+  a { color: var(--teal-dk); text-decoration: underline; text-underline-offset: 2px; }
+  strong { font-weight: 700; }
+  ul { margin: 0 0 16px; padding-left: 22px; }
+  li { margin: 0 0 8px; }
+
+  .updated { color: var(--muted); font-size: 14px; margin: 18px 0 0; }
+
+  .callout {
+    background: color-mix(in srgb, var(--teal) 10%, var(--surface));
+    border: 1px solid color-mix(in srgb, var(--teal) 30%, var(--line));
+    border-radius: 14px;
+    padding: 18px 20px;
+    margin: 24px 0;
+  }
+  .callout p { margin: 0; }
+  .callout .big { font-weight: 700; font-size: 18px; }
+
+  code {
+    font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    background: color-mix(in srgb, var(--teal) 12%, transparent);
+    padding: 1px 6px; border-radius: 6px; font-size: .9em;
+  }
+
+  footer {
+    margin-top: 48px; padding-top: 22px; border-top: 1px solid var(--line);
+    color: var(--muted); font-size: 14px;
+  }
+  footer a { color: var(--muted); }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header class="masthead">
+      <!-- Pocketed app icon (inline SVG, no external request) -->
+      <svg class="mark" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <defs><linearGradient id="g" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#00D6BC"/><stop offset="1" stop-color="#009E8A"/></linearGradient></defs>
+        <rect width="1024" height="1024" rx="230" fill="url(#g)"/>
+        <g transform="translate(512 512) scale(1.16) translate(-512 -532)">
+          <circle cx="512" cy="428" r="118" fill="#64FFDA"/>
+          <rect x="286" y="454" width="452" height="300" rx="54" fill="#FFFFFF"/>
+          <path d="M286 520 H738" stroke="#00A98F" stroke-width="26" stroke-linecap="round" opacity=".16"/>
+        </g>
+      </svg>
+      <div>
+        <h1>Privacy Policy</h1>
+        <p class="app">Pocketed</p>
+      </div>
+    </header>
+
+    <p class="updated">Last updated: October 6, 2026</p>
+
+    <p>Pocketed is a budgeting app built to be <strong>local-first and private by design</strong>. Your financial data lives on your device and leaves it only to a sync server you run yourself, if you choose to set one up. This policy explains what that means for your privacy.</p>
+
+    <div class="callout">
+      <p class="big">We don't collect your data.</p>
+      <p>Pocketed has no user accounts, no analytics, no advertising, and no third-party tracking. We never see, store, or transmit your budget.</p>
+    </div>
+
+    <h2>What we collect</h2>
+    <p><strong>Nothing.</strong> All of your budget data — accounts, envelopes, transactions, bills, goals, debt, projects, and forecasts — is stored only on your device in a local database. Using Pocketed does not create an account, and there is no cloud service operated by us behind the app.</p>
+    <p>A fresh install used in airplane mode has the full feature set and sends <strong>zero bytes</strong> over the network.</p>
+
+    <h2>Information you choose to sync (optional, self-hosted)</h2>
+    <p>Pocketed can optionally sync your budget across your own devices. This is entirely optional and off by default. If you turn it on:</p>
+    <ul>
+      <li>You run the Pocketed sync server yourself (for example, with one Docker command) on your own home network or a private network such as Tailscale or WireGuard, and point the app at it.</li>
+      <li>Your data is sent <strong>only to your own server</strong>, over <strong>your own network</strong>. It never reaches Pocketed, its developers, or any third party.</li>
+      <li>The connection is authenticated with a token that your server generates and that you control, stored in your device's secure storage.</li>
+      <li>Your server stores only your budget data — no email addresses and no account identifiers.</li>
+      <li>You can delete all synced data at any time by deleting your server's data.</li>
+    </ul>
+    <p>If you never set up a server, Pocketed makes <strong>no network connections at all</strong>.</p>
+
+    <h2>Tracking and analytics</h2>
+    <p>Pocketed does <strong>not</strong> track you across apps or websites, and does <strong>not</strong> include any analytics, advertising, crash-reporting, or third-party SDKs. We do not use cookies or advertising identifiers. In App Store terms, <strong>no data is collected and no data is used to track you</strong>.</p>
+
+    <h2>On-device protection</h2>
+    <p>You can turn on an optional biometric or PIN <strong>app lock</strong> (Settings → App lock) to require authentication before opening Pocketed. Your PIN is stored only on your device as a salted hash; biometric data never leaves your device and is handled entirely by your operating system. Device-level encryption applies to the app's data according to your operating system settings.</p>
+
+    <h2>Supporting Pocketed</h2>
+    <p>Pocketed is free. The Settings screen includes an optional "Buy me a coffee" link. Tapping it opens an external website in your browser; any information you provide there is handled by that third party under their own privacy policy. We share no data with them, and the link unlocks nothing — every feature is already free.</p>
+
+    <h2>Children's privacy</h2>
+    <p>Pocketed is a general-purpose budgeting tool and is not directed to children under 13. Because the app collects no personal information from anyone, it collects none from children.</p>
+
+    <h2>Data retention and deletion</h2>
+    <p>Because your data stays on your device, <strong>you</strong> control its retention. To delete it, clear the app's data or uninstall the app. If you set up self-hosted sync, delete your server's data volume to remove the synced copy. We hold no copy of your data, and there is no account for us to delete.</p>
+
+    <h2>Your rights</h2>
+    <p>Privacy laws such as the GDPR and CCPA give you rights to access, correct, and delete your personal data, and not to have it sold. Pocketed honors these by design: your data is in your possession, we never collect or sell it, and we hold nothing to disclose. If you have any question about your data, contact us below.</p>
+
+    <h2>Changes to this policy</h2>
+    <p>If we change this policy, we will update the "Last updated" date above and post the revised version at this address. Material changes will be reflected in the app's release notes.</p>
+
+    <h2>Contact</h2>
+    <p>Questions about this policy or your privacy? Email <a href="mailto:support@pocketed.app">support@pocketed.app</a>.</p>
+
+    <footer>
+      <p>Pocketed · Privacy Policy · This page is served as a static file and loads no external resources.</p>
+    </footer>
+  </div>
+</body>
+</html>
