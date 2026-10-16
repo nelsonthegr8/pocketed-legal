@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Pocketd — Terms of Service</title>
+<meta name="description" content="Terms of Service for the Pocketd budgeting app: free, local-first, provided as is.">
+<style>
+  :root {
+    color-scheme: light;
+    --teal: #00BFA6;
+    --teal-dk: #00897B;
+    --ink: #0D0D1A;
+    --bg: #F6F7F9;
+    --surface: #FFFFFF;
+    --line: #E4E7EC;
+    --text: #1A1B25;
+    --muted: #5B6273;
+    --accent: #7C4DFF;
+    --maxw: 720px;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      color-scheme: dark;
+      --bg: #0B0C12;
+      --surface: #14161F;
+      --line: #262A38;
+      --text: #ECEEF4;
+      --muted: #9AA0B2;
+      --teal: #2BD4BD;
+      --teal-dk: #2BD4BD;
+    }
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; }
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.65;
+    font-size: 17px;
+    -webkit-font-smoothing: antialiased;
+    padding: env(safe-area-inset-top, 0) 20px calc(64px + env(safe-area-inset-bottom, 0));
+  }
+  .wrap { max-width: var(--maxw); margin: 0 auto; }
+
+  header.masthead {
+    display: flex; align-items: center; gap: 16px;
+    padding: 40px 0 28px;
+    border-bottom: 1px solid var(--line);
+  }
+  .mark {
+    width: 56px; height: 56px; border-radius: 28%; flex: none;
+    box-shadow: 0 2px 8px rgba(16,18,30,.18);
+  }
+  .masthead h1 { font-size: 15px; letter-spacing: .14em; text-transform: uppercase; color: var(--teal-dk); margin: 0 0 2px; font-weight: 700; }
+  .masthead .app { font-size: 26px; font-weight: 800; letter-spacing: -.02em; margin: 0; }
+
+  h2 {
+    font-size: 21px; font-weight: 700; letter-spacing: -.01em;
+    margin: 40px 0 10px; padding-top: 6px;
+  }
+  h2:first-of-type { margin-top: 32px; }
+  h3 { font-size: 17px; font-weight: 700; margin: 24px 0 6px; }
+  p { margin: 0 0 16px; }
+  a { color: var(--teal-dk); text-decoration: underline; text-underline-offset: 2px; overflow-wrap: anywhere; }
+  strong { font-weight: 700; }
+  ul { margin: 0 0 16px; padding-left: 22px; }
+  li { margin: 0 0 8px; }
+
+  .updated { color: var(--muted); font-size: 14px; margin: 18px 0 0; }
+
+  .callout {
+    background: color-mix(in srgb, var(--teal) 10%, var(--surface));
+    border: 1px solid color-mix(in srgb, var(--teal) 30%, var(--line));
+    border-radius: 14px;
+    padding: 18px 20px;
+    margin: 24px 0;
+  }
+  .callout p { margin: 0 0 8px; }
+  .callout p:last-child { margin: 0; }
+  .callout .big { font-weight: 700; font-size: 18px; }
+
+  code {
+    font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    background: color-mix(in srgb, var(--teal) 12%, transparent);
+    padding: 1px 6px; border-radius: 6px; font-size: .9em;
+  }
+
+  footer {
+    margin-top: 48px; padding-top: 22px; border-top: 1px solid var(--line);
+    color: var(--muted); font-size: 14px;
+  }
+  footer a { color: var(--muted); }
+  footer p { margin: 0 0 8px; }
+</style>
+
+</head>
+<body>
+  <div class="wrap">
+    <header class="masthead">
+      <!-- Pocketd app icon (inline SVG, no external request) -->
+      <svg class="mark" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <defs><linearGradient id="g" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#00D6BC"/><stop offset="1" stop-color="#009E8A"/></linearGradient></defs>
+        <rect width="1024" height="1024" rx="230" fill="url(#g)"/>
+        <g transform="translate(512 512) scale(1.16) translate(-512 -532)">
+          <circle cx="512" cy="428" r="118" fill="#64FFDA"/>
+          <rect x="286" y="454" width="452" height="300" rx="54" fill="#FFFFFF"/>
+          <path d="M286 520 H738" stroke="#00A98F" stroke-width="26" stroke-linecap="round" opacity=".16"/>
+        </g>
+      </svg>
+
+      <div>
+        <h1>Terms of Service</h1>
+        <p class="app">Pocketd</p>
+      </div>
+    </header>
+
+    <p class="updated">Last updated: October 15, 2026</p>
+
+    <p>These terms cover your use of the Pocketd app ("Pocketd", "the app"). "We" and "us" means the developer of Pocketd. By downloading or using Pocketd you agree to these terms. If you don't agree, please don't use the app.</p>
+
+    <div class="callout">
+      <p class="big">The short version</p>
+      <p>Pocketd is free and runs on your phone. Your data is yours, and so is the job of backing it up. The app's numbers, forecasts and AI answers can be wrong, so check anything important before you act on it. It's provided as is.</p>
+    </div>
+
+    <h2>Pocketd is free</h2>
+    <p>Every feature of Pocketd is free. There are no accounts, subscriptions, ads or paid features. We grant you a personal, non-exclusive, non-transferable license to use Pocketd on devices you own or control, under these terms and the rules of the app store you got it from.</p>
+
+    <h2>Optional tips</h2>
+    <p>You can leave an optional tip to support development. Tips are in-app purchases processed by Apple (App Store) or Google (Google Play), under their terms. They are one-time, consumable purchases, they unlock nothing, and they're non-refundable except where the store's refund policy or the law says otherwise. Refund requests go to Apple or Google, since they handle the payment.</p>
+
+    <h2>Not financial, tax or legal advice</h2>
+    <p>Pocketd is a tool for organizing your own money. It does <strong>not</strong> give financial, investment, tax or legal advice.</p>
+    <p>Budgets, balances, forecasts and "what-if" plans are only as good as the numbers you put in, and they're estimates, not promises. Pocket Watcher's answers come from an AI model and can be wrong, out of date or made up, even when they sound sure. The same goes for money check-in slides and wording, and for statements read from PDFs or photos. Please check anything important yourself before you rely on it. The decisions you make are your own.</p>
+
+    <h2>Your data, and backing it up</h2>
+    <p>You own your data. Pocketd keeps it on your device, and on a sync server you run if you choose to set one up. We never have a copy, so <strong>we can't recover it for you</strong>.</p>
+    <p>If you lose your phone, reset it, or uninstall the app, your budget is gone unless you exported it (Settings → Data → Export Data) or sync it to your own server. Keeping backups is up to you.</p>
+
+    <h2>Your own sync server</h2>
+    <p>The self-hosted sync server is software that <strong>you</strong> run, on hardware and networks you control. You're responsible for installing it, keeping it up to date, keeping it secure (including its password and who you give invite codes to), and backing up its data. If you share a family budget, everyone on it can see and change that budget.</p>
+
+    <h2>AI and search services you connect</h2>
+    <p>Pocket Watcher, and the features that use it, work only with a model you connect: one you run yourself, or a cloud AI service where you use your own API key. Web search uses a provider you pick. Those services are not part of Pocketd. Your use of them is governed by their own terms and privacy policies, you pay them directly for any usage charges, and you're responsible for keeping your API keys safe. We aren't responsible for what those services do, charge or keep.</p>
+
+    <h2>Acceptable use</h2>
+    <p>Please don't use Pocketd to break the law, or to get at data that isn't yours (for example someone else's sync server or budget without their permission). Don't try to interfere with the app's operation or misuse the sync server software to harm others.</p>
+
+    <h2>Open-source components</h2>
+    <p>Pocketd is built with open-source software, such as the Flutter framework and the libraries it uses. Those components are covered by their own licenses, and nothing in these terms limits the rights those licenses give you.</p>
+
+    <h2>Provided "as is"</h2>
+    <p>Pocketd is provided <strong>"as is" and "as available"</strong>, without warranties of any kind, express or implied, including warranties of merchantability, fitness for a particular purpose, accuracy and non-infringement. We don't promise the app will be error-free, always available, or right for your situation.</p>
+
+    <h2>Limitation of liability</h2>
+    <p>To the fullest extent the law allows, we aren't liable for any indirect, incidental, special, consequential or punitive damages, or for lost data, money, profits or savings, arising from your use of Pocketd or from not being able to use it, even if we were told such damages were possible. Our total liability for any claim about the app is limited to the amount you paid us for it, which, since the app is free, is nothing (tips are gifts, not payment for the app).</p>
+    <p>Some places don't allow some of these limits. Where that's the case, they apply only as far as the law allows, and nothing here takes away consumer rights that can't be waived.</p>
+
+    <h2>Changes</h2>
+    <p>We may change, update or stop offering Pocketd, or any part of it, at any time. We may also update these terms. When we do, we'll change the "Last updated" date above and post the new version at this address. If you keep using the app after that, you accept the updated terms.</p>
+
+    <h2>Governing law</h2>
+    <p>These terms are governed by the laws of the place where the developer resides, without regard to conflict-of-law rules. This doesn't take away any protection you have under the consumer laws of the place where you live.</p>
+
+    <h2>Contact</h2>
+    <p>Questions about these terms? Open an issue at <a href="https://github.com/nelsonthegr8/pocketed-legal/issues">github.com/nelsonthegr8/pocketed-legal/issues</a>. Issues are public, so please don't post any financial details or personal information there.</p>
+
+    <footer>
+      <p><a href="../">Pocketd legal</a> · <a href="../privacy/">Privacy Policy</a> · <a href="../support/">Support</a></p>
+      <p>This page is a static file and loads no external resources.</p>
+    </footer>
+  </div>
+</body>
+</html>

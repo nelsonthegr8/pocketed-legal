@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Pocketd — Support</title>
+<meta name="description" content="Help for the Pocketd budgeting app: where your data lives, backups, the self-hosted sync server, Pocket Watcher and tips.">
+<style>
+  :root {
+    color-scheme: light;
+    --teal: #00BFA6;
+    --teal-dk: #00897B;
+    --ink: #0D0D1A;
+    --bg: #F6F7F9;
+    --surface: #FFFFFF;
+    --line: #E4E7EC;
+    --text: #1A1B25;
+    --muted: #5B6273;
+    --accent: #7C4DFF;
+    --maxw: 720px;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      color-scheme: dark;
+      --bg: #0B0C12;
+      --surface: #14161F;
+      --line: #262A38;
+      --text: #ECEEF4;
+      --muted: #9AA0B2;
+      --teal: #2BD4BD;
+      --teal-dk: #2BD4BD;
+    }
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; }
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.65;
+    font-size: 17px;
+    -webkit-font-smoothing: antialiased;
+    padding: env(safe-area-inset-top, 0) 20px calc(64px + env(safe-area-inset-bottom, 0));
+  }
+  .wrap { max-width: var(--maxw); margin: 0 auto; }
+
+  header.masthead {
+    display: flex; align-items: center; gap: 16px;
+    padding: 40px 0 28px;
+    border-bottom: 1px solid var(--line);
+  }
+  .mark {
+    width: 56px; height: 56px; border-radius: 28%; flex: none;
+    box-shadow: 0 2px 8px rgba(16,18,30,.18);
+  }
+  .masthead h1 { font-size: 15px; letter-spacing: .14em; text-transform: uppercase; color: var(--teal-dk); margin: 0 0 2px; font-weight: 700; }
+  .masthead .app { font-size: 26px; font-weight: 800; letter-spacing: -.02em; margin: 0; }
+
+  h2 {
+    font-size: 21px; font-weight: 700; letter-spacing: -.01em;
+    margin: 40px 0 10px; padding-top: 6px;
+  }
+  h2:first-of-type { margin-top: 32px; }
+  h3 { font-size: 17px; font-weight: 700; margin: 24px 0 6px; }
+  p { margin: 0 0 16px; }
+  a { color: var(--teal-dk); text-decoration: underline; text-underline-offset: 2px; overflow-wrap: anywhere; }
+  strong { font-weight: 700; }
+  ul { margin: 0 0 16px; padding-left: 22px; }
+  li { margin: 0 0 8px; }
+
+  .updated { color: var(--muted); font-size: 14px; margin: 18px 0 0; }
+
+  .callout {
+    background: color-mix(in srgb, var(--teal) 10%, var(--surface));
+    border: 1px solid color-mix(in srgb, var(--teal) 30%, var(--line));
+    border-radius: 14px;
+    padding: 18px 20px;
+    margin: 24px 0;
+  }
+  .callout p { margin: 0 0 8px; }
+  .callout p:last-child { margin: 0; }
+  .callout .big { font-weight: 700; font-size: 18px; }
+
+  code {
+    font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    background: color-mix(in srgb, var(--teal) 12%, transparent);
+    padding: 1px 6px; border-radius: 6px; font-size: .9em;
+  }
+
+  footer {
+    margin-top: 48px; padding-top: 22px; border-top: 1px solid var(--line);
+    color: var(--muted); font-size: 14px;
+  }
+  footer a { color: var(--muted); }
+  footer p { margin: 0 0 8px; }
+</style>
+
+</head>
+<body>
+  <div class="wrap">
+    <header class="masthead">
+      <!-- Pocketd app icon (inline SVG, no external request) -->
+      <svg class="mark" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <defs><linearGradient id="g" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#00D6BC"/><stop offset="1" stop-color="#009E8A"/></linearGradient></defs>
+        <rect width="1024" height="1024" rx="230" fill="url(#g)"/>
+        <g transform="translate(512 512) scale(1.16) translate(-512 -532)">
+          <circle cx="512" cy="428" r="118" fill="#64FFDA"/>
+          <rect x="286" y="454" width="452" height="300" rx="54" fill="#FFFFFF"/>
+          <path d="M286 520 H738" stroke="#00A98F" stroke-width="26" stroke-linecap="round" opacity=".16"/>
+        </g>
+      </svg>
+
+      <div>
+        <h1>Support</h1>
+        <p class="app">Pocketd</p>
+      </div>
+    </header>
+
+    <p class="updated">Last updated: October 15, 2026</p>
+
+    <p>Pocketd is a free envelope-budgeting app for iPhone and Android. Give every dollar a job, track bills, goals and debt, see where your money is heading, and present a money check-in to your partner. It runs entirely on your phone, with no account, no ads and no tracking.</p>
+
+    <div class="callout">
+      <p class="big">Need help?</p>
+      <p>Open an issue at <a href="https://github.com/nelsonthegr8/pocketed-legal/issues">github.com/nelsonthegr8/pocketed-legal/issues</a> with what you were doing, what you expected, and your phone model and app version (Settings → About). Issues are <strong>public</strong>, so please don't include balances, transactions, screenshots of your budget, server addresses, passwords or API keys.</p>
+    </div>
+
+    <h2>Common questions</h2>
+
+    <h3>Where is my data?</h3>
+    <p>On your phone, in a database inside the app. There's no Pocketd account or cloud, so we can't see it, and we can't restore it for you. It only goes elsewhere if you set up your own sync server or connect Pocket Watcher to an AI model. See the <a href="../privacy/">Privacy Policy</a> for details.</p>
+
+    <h3>How do I back up or export my budget?</h3>
+    <p>Go to Settings → Data → <strong>Export Data</strong> and pick a format (transactions as CSV, the budget as JSON, or a net worth report), then save or share the file. For an always-up-to-date copy, sync to your own server (next question). If you uninstall the app or lose your phone without either, the data can't be recovered.</p>
+
+    <h3>How do I set up the sync server?</h3>
+    <p>In the app, go to Settings → Data &amp; Sync → Self-hosted → <strong>Run your own server</strong>. It shows the Docker Compose file to copy and the steps to start the server on a computer you own. When the server first starts it prints a server password. Back in Data &amp; Sync, enter the server's address and that password, tap Test connection, then Connect.</p>
+    <p>To share a budget with family, use Settings → Family: share your budget as a family budget, then invite someone with a single-use code (valid for 24 hours). They connect to the same server and tap <strong>Join with a code</strong>.</p>
+
+    <h3>How do I connect Pocket Watcher to a model?</h3>
+    <p>Open Pocket Watcher, tap the ⋯ menu → <strong>Model settings</strong>, and enter where your model runs: either a model server on your own computer (for example llama.cpp, Ollama or LM Studio, at an address like <code>http://192.168.1.20:8080/v1</code>), or a cloud AI service with your own API key. Tap Save &amp; test. Reading PDF statements works with any model. Photos and scanned statements need a model that can see images.</p>
+    <p>If you use a cloud service, it receives your questions and the budget details needed to answer them, and charges you for usage under its own terms.</p>
+
+    <h3>How do tips work?</h3>
+    <p>Pocketd is free, and every feature is included. A tip is an optional, one-time in-app purchase through the App Store or Google Play that simply says thanks. It unlocks nothing. Payments and refunds are handled by Apple or Google.</p>
+
+    <h2>Legal</h2>
+    <ul>
+      <li><a href="../privacy/">Privacy Policy</a></li>
+      <li><a href="../terms/">Terms of Service</a></li>
+    </ul>
+
+    <footer>
+      <p><a href="../">Pocketd legal</a> · <a href="../privacy/">Privacy Policy</a> · <a href="../terms/">Terms of Service</a></p>
+      <p>This page is a static file and loads no external resources.</p>
+    </footer>
+  </div>
+</body>
+</html>

@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Pocketed — Privacy Policy</title>
-<meta name="description" content="Pocketed is a local-first budgeting app. It collects no data, requires no account, and performs no tracking.">
+<title>Pocketd — Privacy Policy</title>
+<meta name="description" content="Pocketd is a local-first budgeting app. The developer collects no data: no account, no analytics, no ads, no tracking.">
 <style>
   :root {
     color-scheme: light;
@@ -61,8 +61,9 @@
     margin: 40px 0 10px; padding-top: 6px;
   }
   h2:first-of-type { margin-top: 32px; }
+  h3 { font-size: 17px; font-weight: 700; margin: 24px 0 6px; }
   p { margin: 0 0 16px; }
-  a { color: var(--teal-dk); text-decoration: underline; text-underline-offset: 2px; }
+  a { color: var(--teal-dk); text-decoration: underline; text-underline-offset: 2px; overflow-wrap: anywhere; }
   strong { font-weight: 700; }
   ul { margin: 0 0 16px; padding-left: 22px; }
   li { margin: 0 0 8px; }
@@ -76,7 +77,8 @@
     padding: 18px 20px;
     margin: 24px 0;
   }
-  .callout p { margin: 0; }
+  .callout p { margin: 0 0 8px; }
+  .callout p:last-child { margin: 0; }
   .callout .big { font-weight: 700; font-size: 18px; }
 
   code {
@@ -90,12 +92,13 @@
     color: var(--muted); font-size: 14px;
   }
   footer a { color: var(--muted); }
+  footer p { margin: 0 0 8px; }
 </style>
 </head>
 <body>
   <div class="wrap">
     <header class="masthead">
-      <!-- Pocketed app icon (inline SVG, no external request) -->
+      <!-- Pocketd app icon (inline SVG, no external request) -->
       <svg class="mark" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
         <defs><linearGradient id="g" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#00D6BC"/><stop offset="1" stop-color="#009E8A"/></linearGradient></defs>
         <rect width="1024" height="1024" rx="230" fill="url(#g)"/>
@@ -107,60 +110,112 @@
       </svg>
       <div>
         <h1>Privacy Policy</h1>
-        <p class="app">Pocketed</p>
+        <p class="app">Pocketd</p>
       </div>
     </header>
 
-    <p class="updated">Last updated: October 6, 2026</p>
+    <p class="updated">Last updated: October 15, 2026</p>
 
-    <p>Pocketed is a budgeting app built to be <strong>local-first and private by design</strong>. Your financial data lives on your device and leaves it only to a sync server you run yourself, if you choose to set one up. This policy explains what that means for your privacy.</p>
+    <p>Pocketd is a budgeting app built to be <strong>local-first and private by design</strong>. Your budget lives on your phone. It leaves your phone only when you turn on a feature that needs to, and then it goes only to the server or service you chose. This policy explains exactly when that happens.</p>
 
     <div class="callout">
       <p class="big">We don't collect your data.</p>
-      <p>Pocketed has no user accounts, no analytics, no advertising, and no third-party tracking. We never see, store, or transmit your budget.</p>
+      <p>Pocketd has no user accounts, no analytics, no advertising, no crash reporting and no tracking. The developer never receives, sees or stores your budget or anything about you.</p>
     </div>
 
     <h2>What we collect</h2>
-    <p><strong>Nothing.</strong> All of your budget data — accounts, envelopes, transactions, bills, goals, debt, projects, and forecasts — is stored only on your device in a local database. Using Pocketed does not create an account, and there is no cloud service operated by us behind the app.</p>
-    <p>A fresh install used in airplane mode has the full feature set and sends <strong>zero bytes</strong> over the network.</p>
-
-    <h2>Information you choose to sync (optional, self-hosted)</h2>
-    <p>Pocketed can optionally sync your budget across your own devices. This is entirely optional and off by default. If you turn it on:</p>
-    <ul>
-      <li>You run the Pocketed sync server yourself (for example, with one Docker command) on your own home network or a private network such as Tailscale or WireGuard, and point the app at it.</li>
-      <li>Your data is sent <strong>only to your own server</strong>, over <strong>your own network</strong>. It never reaches Pocketed, its developers, or any third party.</li>
-      <li>The connection is authenticated with a token that your server generates and that you control, stored in your device's secure storage.</li>
-      <li>Your server stores only your budget data — no email addresses and no account identifiers.</li>
-      <li>You can delete all synced data at any time by deleting your server's data.</li>
-    </ul>
-    <p>If you never set up a server, Pocketed makes <strong>no network connections at all</strong>.</p>
+    <p><strong>Nothing.</strong> Your budget data (accounts, envelopes, transactions, bills, goals, debt, projects, net worth, forecasts, money check-ins and Pocket Watcher chats) is stored only on your device, in a local database inside the app. Using Pocketd doesn't create an account, and there is no cloud service run by us behind the app.</p>
+    <p>Pocketd works fully in airplane mode. Out of the box it makes <strong>no network connections at all</strong>. The only connections it ever makes are for the optional features below, and only after you turn them on.</p>
 
     <h2>Tracking and analytics</h2>
-    <p>Pocketed does <strong>not</strong> track you across apps or websites, and does <strong>not</strong> include any analytics, advertising, crash-reporting, or third-party SDKs. We do not use cookies or advertising identifiers. In App Store terms, <strong>no data is collected and no data is used to track you</strong>.</p>
+    <p>Pocketd does <strong>not</strong> track you across apps or websites. It contains no analytics, advertising, crash-reporting or other third-party SDKs that collect data, and it doesn't use cookies or advertising identifiers. In App Store terms: <strong>Data Not Collected</strong> by the developer, and no data is used to track you.</p>
+    <p>To be clear about what that label means: when you choose to connect Pocketd to a server or service (your own sync server, an AI model, a web search provider), the app sends data there because you asked it to. What happens to it there is up to whoever runs that server or service, which may be you. Each case is described below.</p>
 
-    <h2>On-device protection</h2>
-    <p>You can turn on an optional biometric or PIN <strong>app lock</strong> (Settings → App lock) to require authentication before opening Pocketed. Your PIN is stored only on your device as a salted hash; biometric data never leaves your device and is handled entirely by your operating system. Device-level encryption applies to the app's data according to your operating system settings.</p>
+    <h2>Optional features that use the network</h2>
+    <p>Every one of these is off until you turn it on, and each one talks only to the address you entered or the service you picked.</p>
 
-    <h2>Supporting Pocketed</h2>
-    <p>Pocketed is free. The Settings screen includes an optional "Buy me a coffee" link. Tapping it opens an external website in your browser; any information you provide there is handled by that third party under their own privacy policy. We share no data with them, and the link unlocks nothing — every feature is already free.</p>
+    <h3>Self-hosted sync and family budgets</h3>
+    <p>You can sync your budget between your own phones, or share a budget with family, through a sync server <strong>you run yourself</strong> (for example with Docker on a home computer, reached over your own network or a private network such as Tailscale). Set it up in Settings → Data &amp; Sync.</p>
+    <ul>
+      <li>Your server stores the data of each budget you sync to it.</li>
+      <li>For each connected phone, it also stores a <strong>member name</strong> (your profile name, sent with each sync), a random <strong>member ID</strong> (like <code>7F3K-2Q9M</code>), a <strong>member token</strong> (also kept in your phone's secure storage, the iOS Keychain or Android Keystore), which budgets that phone belongs to and its role (owner or member), and single-use <strong>invite codes</strong>, which expire after 24 hours.</li>
+      <li>The <strong>server password</strong> (printed when the server first starts) is only used to sign a phone up. It is never stored on the phone.</li>
+      <li>Everyone on a shared family budget can see that budget's data and each other's member names. They can't see your other budgets.</li>
+      <li>Leaving a budget, or removing one from your phone, deletes it from that phone only. It doesn't change anything for anyone else.</li>
+      <li>Whoever runs the server can delete everything on it by deleting the server's data volume.</li>
+    </ul>
+    <p>Sync data never goes to the developer or to any third party, unless you host your server with one.</p>
+
+    <h3>Pocket Watcher (optional AI assistant)</h3>
+    <p>Pocket Watcher is off until you connect it to an AI model (in Pocket Watcher: the ⋯ menu → Model settings). You choose where the model runs:</p>
+    <ul>
+      <li><strong>A model server on your own computer or network</strong>, such as llama.cpp, Ollama or LM Studio. Nothing leaves the machines you control.</li>
+      <li><strong>A cloud AI service, using your own API key</strong>, such as OpenAI, Anthropic, Google Gemini, OpenRouter, Groq or Mistral. That provider receives what Pocket Watcher sends and handles it under its own privacy policy and terms, which you should read. You have the account with them, not us.</li>
+    </ul>
+    <p>When you ask Pocket Watcher something, it sends your question, plus the budget details it needs to answer (for example accounts, balances, envelopes, transactions, bills and goals), plus any earlier chats you attached with "Use as context", to the model you configured. Your API key is stored in your device's secure storage (Keychain / Keystore) and is sent only to the service address you entered.</p>
+    <p>Your chats are saved on your device. If you sync, they're also saved on your own sync server. You can delete a chat at any time.</p>
+    <p>The same model is used, only when you start them, by:</p>
+    <ul>
+      <li><strong>Money check-in</strong>: guided mode, "Rewrite with Pocket Watcher", and writing the slide wording. The model receives a summary of the numbers in the check-in.</li>
+      <li><strong>Bank statement import from PDFs and photos</strong>: each statement page is sent to the model to be read, as text for PDFs that have text, or as an image for scanned PDFs and photos. CSV, OFX and QFX statement files are read on your device and never sent to a model.</li>
+    </ul>
+
+    <h3>Web search for Pocket Watcher</h3>
+    <p>Off by default. If you turn on "allow internet" in Pocket Watcher's model settings, the model can search the web and open web pages to answer a question. The search query, which the model writes from your question, goes to the search provider you chose: <strong>DuckDuckGo</strong> (no key), or <strong>Brave Search</strong> or <strong>Tavily</strong> with your own API key, each under its own privacy policy. Web pages are fetched directly from your phone, or through a page-fetching server you run yourself if you enter its address. Search API keys are stored only on your device.</p>
+
+    <h3>Voice</h3>
+    <ul>
+      <li><strong>Speech recognition</strong> uses your phone's built-in speech recognizer, and only while voice mode is on. You can ask for on-device recognition in Voice settings. Otherwise, or if your device can't do it on-device, your operating system may send the audio to Apple or Google to transcribe it, under their privacy policies. Pocketd doesn't store your audio.</li>
+      <li><strong>Read-back</strong> uses the voice you pick: your phone's built-in voices (on the device); an offline neural voice, which is downloaded once from the sherpa-onnx project's GitHub releases only when you tap Download and then runs on your device (nothing is uploaded); or a speech server you run yourself, which receives the text being read aloud.</li>
+    </ul>
+
+    <h3>Tips</h3>
+    <p>Pocketd is free. You can leave an optional tip, which is an in-app purchase handled entirely by Apple (App Store) or Google (Google Play). We never see your payment details or who you are. The app only learns that a tip was purchased, so it can say thank you. Tips unlock nothing.</p>
+
+    <h2>Features that stay on your device</h2>
+    <ul>
+      <li><strong>Showing a money check-in on a TV.</strong> Slides go to a connected display through AirPlay, HDMI, USB-C or Miracast, handled by your phone's operating system. Nothing is sent anywhere else.</li>
+      <li><strong>Importing files</strong> you pick or drag in from another app (bank statements, CSV files) is done on the device, except PDF and photo statements, which go to your Pocket Watcher model as described above.</li>
+      <li><strong>Export</strong> (Settings → Data → Export Data) creates a file only when you ask, and you choose where it goes using your phone's share sheet.</li>
+      <li><strong>Notifications</strong> such as bill reminders are scheduled on your device. There are no push notifications from a server.</li>
+      <li><strong>App lock</strong> (Settings → Security → App Lock). Your PIN is stored on the device as a salted hash. Face ID, Touch ID and fingerprint checks are handled by your operating system, and Pocketd never sees your biometric data.</li>
+      <li><strong>Your profile</strong> (name, emoji and colors, in Settings → Account) is stored on the device. Your name is shared only with your own sync server, as your member name, if you sync.</li>
+    </ul>
+
+    <h2>Permissions and why we ask</h2>
+    <p>Your phone asks you before Pocketd can use any of these. You can say no, or turn a permission off later in your phone's settings, and still use the rest of the app.</p>
+    <ul>
+      <li><strong>Camera and photo library</strong>: only to take or pick photos of bank statement pages.</li>
+      <li><strong>Microphone and speech recognition</strong>: only for Pocket Watcher's voice mode.</li>
+      <li><strong>Face ID / biometrics</strong>: only for app lock. The check is done by your operating system.</li>
+      <li><strong>Local network</strong>: only to reach servers you run on your own network (sync, AI model, speech).</li>
+      <li><strong>Notifications</strong>: for reminders such as upcoming bills, scheduled on your device.</li>
+    </ul>
 
     <h2>Children's privacy</h2>
-    <p>Pocketed is a general-purpose budgeting tool and is not directed to children under 13. Because the app collects no personal information from anyone, it collects none from children.</p>
+    <p>Pocketd is a general-purpose budgeting tool and is not directed to children under 13. Because the developer collects no personal information from anyone, we collect none from children.</p>
 
     <h2>Data retention and deletion</h2>
-    <p>Because your data stays on your device, <strong>you</strong> control its retention. To delete it, clear the app's data or uninstall the app. If you set up self-hosted sync, delete your server's data volume to remove the synced copy. We hold no copy of your data, and there is no account for us to delete.</p>
+    <p>Your data stays in your possession, so <strong>you</strong> decide how long it's kept:</p>
+    <ul>
+      <li><strong>On your phone</strong>: delete items in the app, or uninstall Pocketd to remove everything. Uninstalling without an export or a sync server means the data is gone for good.</li>
+      <li><strong>On your sync server</strong>: delete the server's data volume. On a shared budget, other members keep their own copies on their phones.</li>
+      <li><strong>With a cloud AI or search provider</strong>: what they keep, and for how long, is set by their own policies. Check their settings or contact them.</li>
+    </ul>
+    <p>We hold no copy of your data, and there is no account for us to delete.</p>
 
     <h2>Your rights</h2>
-    <p>Privacy laws such as the GDPR and CCPA give you rights to access, correct, and delete your personal data, and not to have it sold. Pocketed honors these by design: your data is in your possession, we never collect or sell it, and we hold nothing to disclose. If you have any question about your data, contact us below.</p>
+    <p>Privacy laws such as the GDPR and CCPA give you rights to access, correct and delete your personal data, and not to have it sold. Pocketd respects these by design: your data is in your hands, we never collect or sell it, and we hold nothing to disclose or delete. For data you sent to a cloud AI service or search provider, contact that provider to exercise your rights there.</p>
 
     <h2>Changes to this policy</h2>
-    <p>If we change this policy, we will update the "Last updated" date above and post the revised version at this address. Material changes will be reflected in the app's release notes.</p>
+    <p>If we change this policy, we will update the "Last updated" date above and post the new version at this address. Significant changes will also be mentioned in the app's release notes.</p>
 
     <h2>Contact</h2>
-    <p>Questions about this policy or your privacy? Email <a href="mailto:support@pocketed.app">support@pocketed.app</a>.</p>
+    <p>Questions about this policy or your privacy? Open an issue at <a href="https://github.com/nelsonthegr8/pocketed-legal/issues">github.com/nelsonthegr8/pocketed-legal/issues</a>. Issues are public, so please don't post any financial details or personal information there.</p>
 
     <footer>
-      <p>Pocketed · Privacy Policy · This page is served as a static file and loads no external resources.</p>
+      <p><a href="../">Pocketd legal</a> · <a href="../terms/">Terms of Service</a> · <a href="../support/">Support</a></p>
+      <p>This page is a static file and loads no external resources.</p>
     </footer>
   </div>
 </body>
